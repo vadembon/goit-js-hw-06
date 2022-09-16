@@ -6,7 +6,8 @@ console.log(output);
 input.addEventListener("input", onInputChange);
 
 function onInputChange(event) {
-  if ((output.textContent = event.currentTarget.value.trim())) {
+  const inputText = event.currentTarget.value;
+  if ((output.textContent = inputText.trim())) {
     return;
   }
   return (output.textContent = "Anonymous");
