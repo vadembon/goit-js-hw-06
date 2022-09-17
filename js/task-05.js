@@ -7,7 +7,5 @@ input.addEventListener("input", onInputChange);
 
 function onInputChange(event) {
   const inputText = event.currentTarget.value;
-  output.textContent = inputText.trim()
-    ? inputText
-    : (output.textContent = "Anonymous");
+  output.textContent = inputText.trim() ? inputText : "Anonymous";
 }
